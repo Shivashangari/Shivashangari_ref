@@ -8,11 +8,12 @@ import java.util.Scanner;
 
 class Flights_passanger {
 	Scanner scanner = new Scanner(System.in);
+	int numberOfFlights;
 
 	public void count_flights_passanger() {
 
 		System.out.print("Enter the number of flights: ");
-		int numberOfFlights = scanner.nextInt();
+		numberOfFlights = scanner.nextInt();
 
 		int[] passengersPerFlight = new int[numberOfFlights];
 		for (int i = 0; i < numberOfFlights; i++) {
@@ -33,4 +34,3 @@ class Flights_passanger {
 		return totalPassengers;
 	}
 }
-
